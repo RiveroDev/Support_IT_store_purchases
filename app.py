@@ -6,19 +6,14 @@ app = Flask(__name__)
 
 @app.route("/compras")
 def inicio():
-    return " Hola"
+    return <p> "Hola esto es una prueba de red " </p>
 
 
 if __name__=="__main__":
 
+    app.run(debug= True)
     app.run(host ='192.168.1.170',port=5000)
 
-
-
-
-
-
-    
 #"""
 #app.run(host='0.0.0.0')
 #ejemplo app.run(hot=<ip asignada a la pc> , port =<puerto asignado>)
