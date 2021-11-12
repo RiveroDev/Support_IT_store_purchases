@@ -5,13 +5,18 @@ from flask import Flask
 app = Flask(__name__)
 
 @app.route("/compras")
-def inicio():
-    return "<p> Hola esto es una prueba de red </p>"
+def compras():
+    return "<h1><p>Hola esto es una prueba de red  'Hola Caro'</p></h1>"
+
+
+@app.route("/")
+def index():
+    return "<p>Pagina de inicio</p>"
 
 
 if __name__=="__main__":
 
-    app.run(host ='192.168.1.170' , port = 6000)
+    app.run(host ='192.168.1.170', port =5500)
 
 #"""
 #app.run(host='0.0.0.0')
