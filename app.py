@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route("/compras")
 def inicio():
-    return <p> "Hola esto es una prueba de red " </p>
+    return "<p> Hola esto es una prueba de red </p>"
 
 
 if __name__=="__main__":
