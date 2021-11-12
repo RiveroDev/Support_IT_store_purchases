@@ -14,6 +14,11 @@ def index():
     return "<p>Pagina de inicio</p>"
 
 
+@app.route("/<string:nombre>/")
+def muestra_post(nombre):
+    return f"Variasble con el nombre del post {nombre}"
+    #return "Mostrar el pos {}".format(nombre)
+
 if __name__=="__main__":
 
     app.run(host ='192.168.1.170', port =5500)
