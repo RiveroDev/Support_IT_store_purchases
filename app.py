@@ -11,8 +11,7 @@ def inicio():
 
 if __name__=="__main__":
 
-    app.run(debug= True)
-    app.run(host ='192.168.1.170',port=5000)
+    app.run(host ='192.168.1.170' , port = 6000)
 
 #"""
 #app.run(host='0.0.0.0')
