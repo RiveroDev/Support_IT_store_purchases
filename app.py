@@ -1,5 +1,4 @@
 
-
 from flask import Flask
 
 app = Flask(__name__)
@@ -21,7 +20,7 @@ def muestra_post(nombre):
 
 if __name__=="__main__":
 
-    app.run(host ='192.168.1.170', port =5500)
+    app.run(host ='127.0.0.1', port =5500)
 
 #"""
 #app.run(host='0.0.0.0')
