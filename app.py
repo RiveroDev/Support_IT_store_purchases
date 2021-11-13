@@ -3,6 +3,11 @@ from flask import Flask
 
 app = Flask(__name__)
 
+
+
+#creamos vistas 
+#"@decorador <direccion url>"
+#medotod o funcion
 @app.route("/compras")
 def compras():
     return "<h1><p>Hola esto es una prueba de red  'Hola Caro'</p></h1>"
@@ -20,7 +25,8 @@ def muestra_post(nombre):
 
 if __name__=="__main__":
 
-    app.run(host ='127.0.0.1', port =5500)
+    app.run(host ='127.0.0.1', port =5500,debug = True)
+    
 
 #"""
 #app.run(host='0.0.0.0')
