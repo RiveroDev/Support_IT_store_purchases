@@ -1,0 +1,7 @@
+carpeta donde se guardan los templates o diseños de paginas web que 
+usaremos en la aplicacion
+
+>> mkdir templates
+
+flask reconoce esta carpeta templates de forma automatica donde 
+se guardaran todo los documentos.html que se va a usar
