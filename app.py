@@ -13,9 +13,12 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     
+    cursos = ["español", "ingles" , "holandes", "Japones"]
     data = {
         "titulo":"index",
-        "bienvenida":"saludos"
+        "bienvenida":"saludos",
+        "cursos":cursos,
+        "cantidad_curos": len(cursos)
     }
     
     #return "<p>Pagina de inicio</p>"
