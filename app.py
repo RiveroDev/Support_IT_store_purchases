@@ -15,7 +15,7 @@ def index():
     
     cursos = ["español", "ingles" , "holandes", "Japones"]
     data = {
-        "titulo":"index",
+        "titulo":"Inicio",
         "bienvenida":"saludos",
         "cursos":cursos,
         "cantidad_curos": len(cursos)
