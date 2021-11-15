@@ -1,6 +1,6 @@
 
 
-from flask import Flask
+from flask import Flask , render_template
 
 app = Flask(__name__)
 
@@ -11,7 +11,7 @@ def compras():
 
 @app.route("/")
 def index():
-    return "<p>Pagina de inicio</p>"
+    return render_template("index.html")
 
 
 @app.route("/<string:nombre>/")
