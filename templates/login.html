@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <h1 id="title">Formulario de Encuestas para Prueba Freecodecamp</h1>
+        <p id="description" class="parr">Gracias por ayudar a completar esta pequeña encuetas., <strong>Gracias!!!</strong>  </p>
+        <br>
+    <section>
+        <form action="/action_page.php" id="survey-form" target="_blank">  <!--modificar la etiqueta action , esta etiqueta da la orden de mandar la informacion obtenida para llevarla al servidor -->
+            
+            <label for="name" id="name-label" class="label1">Nombre</label>  
+            <input type="text" class="box1" placeholder="Nombre" id="name" name="nombre" required> <br>  <!-- el placeholder es para colocar un reseña dentro del cuadro de texto -->
+            
+            <label for="apellido"  id="last-name" class="label1">Apellido</label>
+            <input type="text" class="box1"name="apellido" id="apellido" placeholder="Apellido"><br>
+    
+            <label for="apodo"  id="apodo-label" class="label1">Apodo</label>
+            <input type="text" class="box1" name="apodo" id="apodo"  placeholder="Escribe tu Apodo"><br>
+    
+            <label for="email" id="email-label" class="label1">Email</label><!--la opcion required , es que se requiere o es necesario colocarlo-->          
+            <input type="email" class="box1" placeholder="***@gmail.com" id="email" name="email" required> <br> <!-- el type="email solo reconoce correos validos de formato "-->
+            
+            <label for="number" id="number-label"class="label1">Edad</label>
+            <input type="number" placeholder="year" id="number"  min="1" max="99" name="edad"><br>
+             <!-- el form de la label debe ser igual al id del input-->
+                <!--nota: si los imput no poseen el atributo name esos datos no seran enviados -->
+    
+            <p>Seleccione su genero:</p>
+            <input type="radio" id="hombre" name="genero" value="hombre">  <!--La etiqueta value determina el valor inicial-->
+            <label for="hombre">Hombre</label><br>
+            <input type="radio" id="mujer" name="genero" value="mujer">
+            <label for="mujer">Mujer</label><br>
+            <input type="radio" id="otro" name="genero" value="otro">
+            <label for="otro">Otros</label> <br>
+                    <!--los name deben ser iguales entre las radio de un grupo-->
+                    <!--el value es lo que va a mandar a la base de datos -->
+            <p>Como calificaria su experiencia en Freecodecamp.!</p>
+            <input type="checkbox" id="opcion1" name="opcione3" value="Excelente">
+            <label for="opcion1"> Excelente.</label><br>
+            <input type="checkbox" id="opcion2" name="opcion2" value="Buena">
+            <label for="opcion2"> Muy buena ....</label><br>
+            <input type="checkbox" id="opcion3" name="opcion3" value="Bien">
+            <label for="opcion3"> bien </label> <br>
+            <input type="checkbox" name="opcion4" id="opcion4" value="Podria Mejorar">
+            <label for="opcion4">Podria Mejorar</label>
+    
+                    <!--los name deben ser iguales entre las checkbox de un grupo-->
+    
+            <p>Que otros lenguajes de Programacion te gustaria aprender en Freecodecamp.</p>
+    
+            <label for="dropdown">lenguaje de compilado te gusta:</label><br>
+            <select name="Lenguaje1" id="dropdown">
+                <option value="Ensamblador">Ensamblador</option>
+                <option value="C++">c++</option>
+                <option value="Java">Java</option>
+                <option value="C#">C#</option>
+                <option value="Otros">Otros</option>
+            </select> <br>
+    
+            <label for="dropdown1">Lenguaje de Alto nivel</label><br>
+            <select name="Lengu" id="dropdown1">
+                <option value="javaS">javaScript</option>
+                <option value="Python">python</option>
+                <option value="Otros">Otros</option>
+            </select> <br>
+    
+            <p>Puede escribir aqui su comentario</p>
+            <textarea name="message" rows="10" cols="100" class="areatexto">
+         Escribe aqui !!
+            </textarea>
+    
+            
+            <button type="submit" id="submit">Submits</button>   <!---boton de envio -->
+            
+        </form>
+    
+    </section>
+    <footer>
+        <p class="derechos">todos los derechos reservados @RichardRivero</p>
+    </footer>
+</body>
+</html>
