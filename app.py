@@ -19,6 +19,10 @@ def muestra_post(nombre):
     return f"Variasble con el nombre del post {nombre}"
     #return "Mostrar el pos {}".format(nombre)
 
+@app.route("/reportes/")
+def reportes():
+    return render_template("reportes")
+
 if __name__=="__main__":
 
     app.run(port =5500, debug= True)
