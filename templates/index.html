@@ -3,33 +3,33 @@
 
 <head>
     <meta chatset="UTF-8">
-    <link rel="stylesheet" type="text/css" href={{ url_for('static' , filename = 'css/login.css')}}>
+    <link rel="stylesheet" type="text/css" href={{ url_for('static', filename = 'css/login.css')}}>
     <link rel="stylesheet" href={{ url_for('static', filename = "css/font-awesome.css")}}>
 </head>
 
 <body>
     <div id="box_log">
-        <img src={{ url_for('static', filename = 'img/logo-tmyc.png')}}  alt="logo-tmyc" class ="img_log">
+        <img src={{ url_for('static', filename = 'img/Logo_TMYC1.png')}}  alt="logo-tmyc" class ="img_log"> <! nota: hay que colocar siempre la "ruta"/"nombre_image" ->
     </div>
 
-    <form action="#" method="POST">
+    <form action="comprobar_usuario" method="POST">  <! colocamos  en action es donde se manda la informacion del metodo POST  que manda los datos como un diccionario -> 
         <div id="login-box">
-            <h1>Bienvenido</h1> <! - El título de Inicio de sesión ->
+            <h1>Bienvenido</h1>
 
             <div class="form">
-                <div class="item"> <! - parte de nombre de usuario ->
-                    <i></i> <! - Se utilizará para dibujar el icono delante del nombre de usuario ->
-                    <input type="text" placeholder="Nombre usuario" name="username"> <! - Entrada de nombre de usuario realizada por cuadro de texto ->
+                <div class="item"> 
+                    <i></i> 
+                    <input type="text" placeholder="Nombre usuario" name="userName"> 
                 </div>
 
-                <div class="item"> <! - parte de la contraseña ->
-                    <i></i> <! - Se utilizará para dibujar el icono delante de la contraseña en el futuro ->
-                    <input type="password" placeholder="Clave" name="password"> <! - Entrada de contraseña usando el cuadro de texto de contraseña ->
+                <div class="item">
+                    <i></i>
+                    <input type="password" placeholder="Clave" name="password">
                 </div>
 
             </div>
             
-            <button type="submit" >Inicio</button> <! - Botón de inicio de sesión implementado con el botón ->
+            <button type="submit" >Inicio</button>
         </div>
     </form>
 </body>
