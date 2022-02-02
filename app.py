@@ -1,19 +1,31 @@
 
+# inicio de flask 
 
-from flask import Flask , render_template
 
-app = Flask(__name__)
+from flask import Flask , render_template , request
 
-@app.route("/compras")
-def compras():
-    return "<h1><p>Hola esto es una prueba de red  'Hola Caro'</p></h1>"
-
+app = Flask(__name__) #instancia de flask 
 
 @app.route("/")
 def index():
     return render_template("index.html")
 
+@app.route("/comprobar_usuario",methods=['POST']) # recive las variables mandadas desde la ventana de incio
+def usuario():  
 
+    '''
+    # ESTO ES CON EL METOSO GET---- SE USAR     request.args.get('nombre_de_la_variable')
+    nombreUser = request.args.get('nameuser')
+    passWord = request.args.get('password')
+    '''
+    passWord = request.form['password']
+    nombreUser = request.form['userName']
+
+    if nombreUser == 'richa' and int(passWord)==12345:
+        return "<h1>Bienvenido " + nombreUser + "y  password: " + passWord + "</h1>"
+    else:
+        return "<h2> LA contraseña y clave son incorrectas </h2>"
+            
 @app.route("/<string:nombre>/")
 def muestra_post(nombre):
     return f"Variasble con el nombre del post {nombre}"
@@ -25,7 +37,7 @@ def reportes():
 
 if __name__=="__main__":
 
-    app.run(port =5500, debug= True)
+    app.run(host='0.0.0.0',port =5500, debug= True)
 
 #"""
 #app.run(host='0.0.0.0')
