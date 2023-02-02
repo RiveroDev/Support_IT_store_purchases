@@ -1,0 +1,7 @@
+
+
+
+pagina donde esta la informacion de sqlite3
+
+https://parzibyte.me/blog/2017/11/21/python-3-sqlite-3-introduccion-ejemplos/
+
